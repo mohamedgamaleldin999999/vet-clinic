@@ -41,9 +41,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 [Vet-Clinic] <a name="about-project"></a>
 
-> A database for a vet clinic. It stores and displays the data for the animals.
-
-**[Vet-Clinic]** is a...
+**[Vet-Clinic]** is a database for a vet clinic. It stores and displays the data for the animals.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -66,8 +64,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **[Stores-data]**
 - **[Manipulates-data]**
@@ -137,8 +133,6 @@ You can deploy the vet clinic application using: google cloud, Microsoft Azure, 
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 ### 👤 **Mohamed-Gamaleldin**
 
 - GitHub: [@githubhandle](https://github.com/mohamedgamaleldin999999)
@@ -149,8 +143,6 @@ You can deploy the vet clinic application using: google cloud, Microsoft Azure, 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Online-reservations]**
 - [ ] **[Ambulance-request]**
