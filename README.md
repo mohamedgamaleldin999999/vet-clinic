@@ -45,7 +45,6 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -63,24 +62,15 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Vet-Clinic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> A database for a vet clinic. It stores and displays the data for the animals.
 
-**[your_project__name]** is a...
+**[Vet-Clinic]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
 
 <details>
   <summary>Server</summary>
@@ -102,27 +92,17 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Stores-data]**
+- **[Manipulates-data]**
+- **[Displays-data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -130,75 +110,49 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
 ```sh
  gem install rails
 ```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:diarisdiakite/vet_clinic.git
 ```
---->
+
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd my-project
+  cd vet_clinic
   gem install
 ```
---->
+
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
   rails server
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+  bin/rails test test/models/animals_test.rb
 ```
---->
 
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+You can deploy the vet clinic application using: google cloud, Microsoft Azure, Netlify, github, render and other platform by giving credit on using our template and/or contribute via pull requests (read more in the contributing section).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,17 +162,10 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+### 👤 **Mohamed-Gamaleldin**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/mohamedgamaleldin999999)
+- Twitter: [@twitterhandle](https://twitter.com/Mohamme43086002)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,9 +175,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Online-reservations]**
+- [ ] **[Ambulance-request]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,9 +194,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project, follow me on GitHub
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,9 +202,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank Diariatou Diakite for always helping me with my studies.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -268,15 +210,13 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **[What-is-SQL?]**
 
-- **[Question_1]**
+  - [SQL-(Structured-Query-Language)-is-a-programming-language-used-for-managing-and-interacting-with-databases.-It's-used-to-retrieve,-insert,-update,-and-delete-data-in-a-structured-manner-from-relational-database-systems.-SQL-also-helps-define-the-structure-of-a-database-and-enforce-data-integrity-rules.]
 
-  - [Answer_1]
+- **[What-is-PostgreSQL?]**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - [PostgreSQL-is-an-open-source,-highly-capable-relational-database-management-system-(RDBMS)-known-for-its-robustness,-extensibility,-and-compliance-with-SQL-standards.-It's-widely-used-in-various-applications,-from-small-scale-to-enterprise-level,-and-offers-features-like-ACID-compliance,-advanced-data-types,-and-strong-community-support.]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
