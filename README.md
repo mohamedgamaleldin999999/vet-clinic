@@ -187,13 +187,13 @@ I would like to thank Diariatou Diakite for always helping me with my studies.
 
 ## ❓ FAQ <a name="faq"></a>
 
-- **[What-is-SQL?]**
+- **What is SQL?**
 
-  - [SQL-(Structured-Query-Language)-is-a-programming-language-used-for-managing-and-interacting-with-databases.-It's-used-to-retrieve,-insert,-update,-and-delete-data-in-a-structured-manner-from-relational-database-systems.-SQL-also-helps-define-the-structure-of-a-database-and-enforce-data-integrity-rules.]
+  - SQL (Structured Query Language) is a programming language used for managing and interacting with databases. It's used to retrieve, insert, update, and delete data in a structured manner from relational database systems. SQL also helps define the structure of a database and enforce data integrity rules.
 
-- **[What-is-PostgreSQL?]**
+- **What is PostgreSQL?**
 
-  - [PostgreSQL-is-an-open-source,-highly-capable-relational-database-management-system-(RDBMS)-known-for-its-robustness,-extensibility,-and-compliance-with-SQL-standards.-It's-widely-used-in-various-applications,-from-small-scale-to-enterprise-level,-and-offers-features-like-ACID-compliance,-advanced-data-types,-and-strong-community-support.]
+  - PostgreSQL is an open-source, highly capable relational database management system (RDBMS) known for its robustness, extensibility, and compliance with SQL standards. It's widely used in various applications, from small-scale to enterprise-level, and offers features like ACID compliance, advanced data types, and strong community support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
