@@ -45,3 +45,8 @@ DELETE FROM animals;
 SELECT * FROM animals;
 ROLLBACK;
 SELECT * FROM animals;
+
+
+/* Updating the negative weights and deleting then rolling back some records */
+
+BEGIN;
