@@ -74,3 +74,9 @@ FROM animals;
 SELECT COUNT(*) AS non_escape_count
 FROM animals
 WHERE escape_attempts = 0;
+
+
+/* Average weight */
+
+SELECT AVG(weight_kg) AS average_weight
+FROM animals;
