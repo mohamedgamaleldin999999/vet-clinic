@@ -50,3 +50,5 @@ SELECT * FROM animals;
 /* Updating the negative weights and deleting then rolling back some records */
 
 BEGIN;
+DELETE FROM animals
+WHERE date_of_birth > '2022-01-01';
