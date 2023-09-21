@@ -67,3 +67,10 @@ COMMIT;
 
 SELECT COUNT(*) AS total_animals
 FROM animals;
+
+
+/* non-escape count */
+
+SELECT COUNT(*) AS non_escape_count
+FROM animals
+WHERE escape_attempts = 0;
