@@ -80,3 +80,10 @@ WHERE escape_attempts = 0;
 
 SELECT AVG(weight_kg) AS average_weight
 FROM animals;
+
+
+/* Who escapes more? */
+
+SELECT neutered, MAX(escape_attempts) AS max_escape_attempts
+FROM animals
+GROUP BY neutered;
