@@ -87,3 +87,10 @@ FROM animals;
 SELECT neutered, MAX(escape_attempts) AS max_escape_attempts
 FROM animals
 GROUP BY neutered;
+
+
+/* min and max weight per type */
+
+SELECT species, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
+FROM animals
+GROUP BY species;
