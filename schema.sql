@@ -12,13 +12,3 @@ CREATE TABLE animals(
 
 ALTER TABLE animals
 ADD species VARCHAR(255);
-
-/* fix some positive weights to be negative as per the requirements and change a mistake in an animal name with id 6 */
-
-BEGIN;
-UPDATE ANIMALS SET WEIGHT_KG = WEIGHT_KG * (-1) WHERE NAME IN('Charmander', 'Plantmon', 'Squirtle', 'Angemon');
-UPDATE animals
-SET name = 'Plantmon'
-WHERE id = 6;
-COMMIT;
-

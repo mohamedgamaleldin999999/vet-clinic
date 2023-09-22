@@ -12,6 +12,16 @@ SELECT * FROM animals WHERE name != 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 
+/* fix some positive weights to be negative as per the requirements and change a mistake in an animal name with id 6 */
+
+BEGIN;
+UPDATE ANIMALS SET WEIGHT_KG = WEIGHT_KG * (-1) WHERE NAME IN('Charmander', 'Plantmon', 'Squirtle', 'Angemon');
+UPDATE animals
+SET name = 'Plantmon'
+WHERE id = 6;
+COMMIT;
+
+
 /* Inside a transaction update the animals table by setting the species column to unspecified.
 Verify that change was made. Then roll back the change and verify that the species columns went
 back to the state before the transaction. */
