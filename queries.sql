@@ -10,3 +10,105 @@ SELECT name, escape_attempts FROM animals WHERE weight_kg > 10.5;
 SELECT * FROM animals WHERE neutered;
 SELECT * FROM animals WHERE name != 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
+
+
+/* fix some positive weights to be negative as per the requirements and change a mistake in an animal name with id 6 */
+
+BEGIN;
+UPDATE ANIMALS SET WEIGHT_KG = WEIGHT_KG * (-1) WHERE NAME IN('Charmander', 'Plantmon', 'Squirtle', 'Angemon');
+UPDATE animals
+SET name = 'Plantmon'
+WHERE id = 6;
+COMMIT;
+
+
+/* Inside a transaction update the animals table by setting the species column to unspecified.
+Verify that change was made. Then roll back the change and verify that the species columns went
+back to the state before the transaction. */
+
+BEGIN;
+UPDATE animals
+SET species = 'unspecified';
+SELECT * FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
+
+
+/* Update the species of the animals to pokemon/digimon and commit */
+
+BEGIN;
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon';
+UPDATE animals
+SET species = 'pokemon'
+WHERE species IS NULL;
+SELECT * FROM animals;
+COMMIT;
+SELECT * FROM animals;
+
+
+/* Delete all the records then rollback */
+
+BEGIN;
+DELETE FROM animals;
+SELECT * FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
+
+
+/* Updating the negative weights and deleting then rolling back some records */
+
+BEGIN;
+DELETE FROM animals
+WHERE date_of_birth > '2022-01-01';
+SAVEPOINT my_savepoint;
+UPDATE animals
+SET weight_kg = weight_kg * -1;
+ROLLBACK TO my_savepoint;
+UPDATE animals
+SET weight_kg = weight_kg * -1
+WHERE weight_kg < 0;
+COMMIT;
+
+
+
+/* how many animals? */
+
+SELECT COUNT(*) AS total_animals
+FROM animals;
+
+
+/* non-escape count */
+
+SELECT COUNT(*) AS non_escape_count
+FROM animals
+WHERE escape_attempts = 0;
+
+
+/* Average weight */
+
+SELECT AVG(weight_kg) AS average_weight
+FROM animals;
+
+
+/* Who escapes more? */
+
+SELECT neutered, MAX(escape_attempts) AS max_escape_attempts
+FROM animals
+GROUP BY neutered;
+
+
+/* min and max weight per type */
+
+SELECT species, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
+FROM animals
+GROUP BY species;
+
+
+/* Average attempts of animals born between 1990 and 2000 */
+
+SELECT species, AVG(escape_attempts) AS avg_escape_attempts
+FROM animals
+WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
+GROUP BY species;
