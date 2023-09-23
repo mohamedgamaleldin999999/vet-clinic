@@ -217,3 +217,15 @@ JOIN animals a ON v.animal_id = a.id
 GROUP BY a.name
 ORDER BY visit_count DESC
 LIMIT 1;
+
+
+-- First visit for Smith
+
+SELECT vet.name AS vet_name, a.name AS animal_name, MIN(v.visit_date) AS first_visit_date
+FROM visits v
+JOIN vets vet ON v.vet_id = vet.id
+JOIN animals a ON v.animal_id = a.id
+WHERE vet.name = 'Maisy Smith'
+GROUP BY vet_name, animal_name
+ORDER BY first_visit_date
+LIMIT 1;
