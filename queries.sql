@@ -120,3 +120,11 @@ SELECT a.name
 FROM animals a
 INNER JOIN owners o ON a.owner_id = o.id
 WHERE o.full_name = 'Melody Pond';
+
+
+-- List of all animals that are Pokémon
+
+SELECT a.name
+FROM animals a
+INNER JOIN species s ON a.species_id = s.id
+WHERE s.name = 'Pokemon';
