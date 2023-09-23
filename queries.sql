@@ -128,3 +128,11 @@ SELECT a.name
 FROM animals a
 INNER JOIN species s ON a.species_id = s.id
 WHERE s.name = 'Pokemon';
+
+
+-- How many animals are there per species?
+
+SELECT s.name AS species_name, COUNT(a.id) AS animal_count
+FROM species s
+LEFT JOIN animals a ON s.id = a.species_id
+GROUP BY s.name;
