@@ -229,3 +229,13 @@ WHERE vet.name = 'Maisy Smith'
 GROUP BY vet_name, animal_name
 ORDER BY first_visit_date
 LIMIT 1;
+
+
+-- Details for the most recent visit
+
+SELECT vet.name AS vet_name, a.name AS animal_name, v.visit_date AS visit_date
+FROM visits v
+JOIN vets vet ON v.vet_id = vet.id
+JOIN animals a ON v.animal_id = a.id
+ORDER BY v.visit_date DESC
+LIMIT 1;
