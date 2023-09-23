@@ -130,9 +130,17 @@ INNER JOIN species s ON a.species_id = s.id
 WHERE s.name = 'Pokemon';
 
 
+-- List all owners and their animals
+
+SELECT o.full_name, COALESCE(a.name, 'No animals') AS animal_name
+FROM owners o
+LEFT JOIN animals a ON o.id = a.owner_id;
+
+
 -- How many animals are there per species?
 
 SELECT s.name AS species_name, COUNT(a.id) AS animal_count
 FROM species s
 LEFT JOIN animals a ON s.id = a.species_id
 GROUP BY s.name;
+
