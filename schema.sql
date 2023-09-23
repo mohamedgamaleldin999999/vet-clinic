@@ -21,3 +21,11 @@ CREATE TABLE owners (
     full_name TEXT,
     age INTEGER
 );
+
+
+/* Create table species */
+
+CREATE TABLE species (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
