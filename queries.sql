@@ -239,3 +239,13 @@ JOIN vets vet ON v.vet_id = vet.id
 JOIN animals a ON v.animal_id = a.id
 ORDER BY v.visit_date DESC
 LIMIT 1;
+
+
+-- Visits with non specialist
+
+SELECT COUNT(*) AS count
+FROM visits v
+JOIN animals a ON v.animal_id = a.id
+JOIN vets vet ON v.vet_id = vet.id
+LEFT JOIN specializations s ON vet.id = s.vet_id AND a.species_id = s.species_id
+WHERE s.vet_id IS NULL;
